@@ -5,20 +5,20 @@ const mysql = require("mysql");
 
 let app = express();
 let path = require('path');
+
+// Serve static content for the app from the "public" directory in the application directory.
+app.use(express.static("public"));
+
 var PORT = process.env.PORT || 3000;
 
 // Set Handlebars as the default templating engine.
-app.use(express.static(path.join(__dirname, '/public')));
+
 
 app.engine("handlebars", handlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 const lunches = [
   {
-    lunch: "Beet & Goat Cheese Salad with minestrone soup."
-  }, {
-    lunch: "Pizza, two double veggie burgers, fries with a Big Gulp"
-  }, {
     lunch: "dgdgjdlkgjdljgldskgjldsgjlds"
   }
 ];
