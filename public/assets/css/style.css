@@ -1,0 +1,46 @@
+html{
+
+    color: green;
+    background-color: beige;
+    
+
+}
+#container{
+
+
+    margin-left: 33%;
+
+}
+
+#notEaten, #center, #devoured {display: inline-block; *display: inline;
+
+
+
+    
+    
+
+
+}
+
+
+#notEaten{
+background-color: black;
+height: 250px;
+    width: 250px;
+    
+    
+   
+}
+
+#center{
+
+    
+}
+
+
+#devoured{
+
+background-color: brown;
+height: 250px;
+    width: 250px;
+}
